@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: "y.lyakh"
+      context: prod, test
+      changes:
+        - sqlFile:
+            path: db/changesets/bigdata/0003/ddl.sql
+            endDelimiter: "\n;"
+      rollback:
+        sqlFile:
+          path: db/changesets/bigdata/0003/rollback.sql

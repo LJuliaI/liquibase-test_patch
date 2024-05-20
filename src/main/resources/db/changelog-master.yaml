@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: "db/changesets/bigdata/0001/changeset.yaml"
+  - include:
+      file: "db/changesets/bigdata/0002/changeset.yaml"
+  - include:
+      file: "db/changesets/bigdata/0003/changeset.yaml"

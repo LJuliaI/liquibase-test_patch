@@ -1,0 +1,1 @@
+﻿grant insert,update,select on bigdata.link_type to bigdata_app;

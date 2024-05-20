@@ -1,0 +1,1 @@
+drop table bigdata.link_type

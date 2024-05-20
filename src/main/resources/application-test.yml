@@ -1,0 +1,15 @@
+spring:
+  application.name: study-kotlin-liquibase
+  profiles.active: test
+  datasource:
+    url: "jdbc:postgresql://localhost:5434/postgres?currentSchema=bigdata"
+    username: "bigdata_app"
+    password: "apppassword"
+
+  liquibase:
+    context: test
+    enabled: true
+    user: "bigdata_user"
+    password: "ownerpassword"
+    url: "jdbc:postgresql://localhost:5434/postgres?currentSchema=bigdata"
+    change-log: "classpath:/db/changelog-test.yaml"
