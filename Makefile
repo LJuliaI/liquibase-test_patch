@@ -9,5 +9,5 @@ stop_db:
 run_db:
 	make stop_db
 	make build_db
-	docker run -d --name bigdata-db -p 5433:5432 books-db
-	docker run -d --name bigdata-db-test -p 5434:5432 books-db-test
+	docker run -d --name bigdata-db -p 5433:5432 bigdata-db
+	docker run -d --name bigdata-db-test -p 5434:5432 bigdata-db-test
